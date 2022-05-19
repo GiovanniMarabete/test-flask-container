@@ -6,7 +6,7 @@ posts = [
     {
         'author': 'Pippo',
         'title': 'Blog post 1',
-        'content': 'First post content',
+        'content': 'First post GitHub Actions 2022',
         'date_posted': 'Febraury 20, 2019'
     },
     {
