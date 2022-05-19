@@ -1,4 +1,4 @@
-name: test-flask-container
+name: CI for test-flask-container
 
 on:
   # run it on push to the default repository branch
