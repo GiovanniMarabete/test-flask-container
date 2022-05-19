@@ -1,4 +1,5 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, jsonify
+from AzureCLI import *
 app = Flask(__name__)
 
 posts = [
@@ -33,6 +34,10 @@ def login():
 @app.route('/register')
 def register():
     return render_template('register.html', title ='Register')
+
+@app.route('/listvms', methods=['GET'])
+def listvms():
+    return jsonify(AzureCLI.listVMs())
 
 if __name__== '__main__':
     app.run(debug=True, host='0.0.0.0', port="80")
