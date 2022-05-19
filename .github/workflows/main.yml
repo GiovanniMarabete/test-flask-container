@@ -1,8 +1,10 @@
-name: Docker
+name: test-flask-container
 
 on:
   push:
-    tags: ["v*.*.*"]
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 env:
   IMAGE_NAME: test-flask-container
