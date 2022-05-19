@@ -20,12 +20,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       
-      # Run Super-Linter
-      - name: Run Super-Linter
-        uses: github/super-linter@v4
-        env:
-         DEFAULT_BRANCH: main
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # # Run Super-Linter
+      # - name: Run Super-Linter
+      #   uses: github/super-linter@v4
+      #   env:
+      #    DEFAULT_BRANCH: main
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # setup Docker buld action
       - name: Set up Docker Buildx
