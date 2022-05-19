@@ -11,7 +11,7 @@ posts = [
     },
     {
         'author': 'Pluto',
-        'title': 'Blog post 2',
+        'title': 'Blog post GitHub Actions',
         'content': 'Second post content',
         'date_posted': 'Febraury 28, 2019'
     }
