@@ -6,6 +6,7 @@ on:
     branches: [main]
   # run it during pull request
   pull_request:
+    branches: [main]
 
 jobs:
   # define job to build and publish docker image
@@ -31,7 +32,7 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
       
-      - name: Build image and push to Docker Hub and GitHub Container Registry
+      - name: Build image and push to Azure Container Registry
         uses: docker/build-push-action@v2
         with:
           # relative path to the place where source code with Dockerfile is located
