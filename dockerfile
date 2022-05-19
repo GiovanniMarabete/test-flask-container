@@ -1,7 +1,8 @@
-FROM python:3-alpine
+FROM python:latest
 LABEL key="Giovanni Marabete"
 COPY app /app
 WORKDIR /app
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 # EXPOSE 80
+# EXPOSE 5000
 CMD ["python", "app.py"]

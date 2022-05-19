@@ -1,3 +1,4 @@
 flask
 azure-mgmt-compute
 flake8
+msrestazure
